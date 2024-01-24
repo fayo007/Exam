@@ -1,0 +1,351 @@
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+  <!-- slider section -->
+  <section class=" slider_section">
+    <div id="carouselExampleIndicators" class="carousel slide vert" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="slider_box">
+            <div class="fixed_company-detail">
+              <p>
+                Qo'riqlash kompaniyasi
+              </p>
+            </div>
+            <div class="slider-detail">
+              <div class="slider_detail-heading">
+                <h1>
+                  Qo'riqlash kompaniyasi
+                </h1>
+              </div>
+              <div class="slider_detail-text">
+                <p>
+                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="slider_detail-btn">
+                <a href="">
+                  <span>
+                    Ko'proq ko'rish
+                  </span>
+                  <img src="{% static 'images/arrow.png' %}" alt="" class="ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider_box">
+            <div class="fixed_company-detail">
+              <p>
+                Qo'riqlash kompaniyasi
+              </p>
+            </div>
+            <div class="slider-detail">
+              <div class="slider_detail-heading">
+                <h1>
+                 Qo'riqlash kompaniyasi
+                </h1>
+              </div>
+              <div class="slider_detail-text">
+                <p>
+                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="slider_detail-btn">
+                <a href="">
+                  <span>
+                    Ko'proq o'qish
+                  </span>
+                  <img src="{% static 'images/arrow.png' %}" alt="" class="ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider_box">
+            <div class="fixed_company-detail">
+              <p>
+                Qo'riqlash kompaniyasi
+              </p>
+            </div>
+            <div class="slider-detail">
+              <div class="slider_detail-heading">
+                <h1>
+                  Qo'riqlash kompaniyasi
+                </h1>
+              </div>
+              <div class="slider_detail-text">
+                <p>
+                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="slider_detail-btn">
+                <a href="">
+                  <span>
+                    Koproq o'qish
+                  </span>
+                  <img src="{% static 'images/arrow.png' %}" alt="" class="ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- end slider section -->
+
+  <!-- welcome section -->
+  <section class="welcome_section layout_padding">
+    {% for item in about %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div>
+            <img class="img-fluid" src="{{item.img.url}}" alt="" />
+          </div>
+        </div>
+        <div class=" col-md-6">
+          <div class="welcome_detail">
+            <h2>
+              {{item.title}}
+            </h2>
+            <p>
+              {{item.body}}
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+  <!-- end welcome section -->
+
+  <!-- service section -->
+  <section class="service_section ">
+    <div class="container">
+      <div class="service_detail">
+        <h2>
+          Bizning qo'riqlash markazimizda
+        </h2>
+      </div>
+      <div class="service_img-container">
+        <div class="service_img-box i-box-1">
+          <a href=""> Bank xavsizligi</a>
+        </div>
+        <div class="service_img-box i-box-2">
+          <a href="">Aholi xavsizligi</a>
+        </div>
+        <div class="service_img-box i-box-3">
+          <a href="">Mehmonxona xavsizligi </a>
+        </div>
+        <div class="service_img-box i-box-4">
+          <a href=""> Uyingizni xavsizligi</a>
+        </div>
+      </div>
+      <div class="service_btn">
+        <a href="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- security section -->
+
+  <section class="security_section layout_padding">
+    <h3>
+      Bizning
+
+    </h3>
+    <h2>
+      Ishonchli hodimlarimiz
+    </h2>
+    <div class="security_container">
+      <div class="carousel-wrap">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="security_img-box i-box-1">
+            </div>
+          </div>
+          <div class="item">
+            <div class="security_img-box i-box-2">
+            </div>
+          </div>
+          <div class="item">
+            <div class="security_img-box i-box-3">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="security_btn">
+    </div>
+  </section>
+  <!-- end security section -->
+
+
+  <!-- story section -->
+
+  <section class="layout_padding story_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div>
+            <img class="img-fluid" src="{% static 'images/security.jpg' %}" alt="" />
+          </div>
+        </div>
+        <div class=" col-md-6">
+          <div class="story_detail">
+            <h3>
+              Bizning muvaffaqqiyatli ishlarimiz
+            </h3>
+            <h2>
+              muvaffaqqiyatli ishlarimiz
+            </h2>
+            <p>
+              Unda IIV Akademiyasi mustaqil izlanuvchisi F.B. Sobirovning “12.00.09 – Jinoyat protsessi. Kriminalistika, tezkor-qidiruv huquq va sud 
+              ekspertizasi” ixtisosligidan “Xatshunoslik ekspertizasida imzolar tadqiqoti metodikasini takomillashtirish” mavzuyida yuridik fanlar bo‘yicha
+               falsafa doktori (PhD) ilmiy darajasini olish uchun tayyorlagan dissertatsiyasi muhokama qilinadi.
+            </p>
+            <div class="story_detail-btn">
+              <a href="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end story section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div id="map" class="h-100 w-100 ">
+          </div>
+        </div>
+        <div class=" col-md-6 contact_form-container">
+          <div class="contact_box">
+            <form action="">
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Phone Number">
+              <input type="text" placeholder="Message">
+              <div>
+                <button type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 info_detail">
+          <div>
+          </div>
+        </div>
+        <div class=" col-md-4 address_container">
+          <div>
+            <h3>
+              Address:
+            </h3>
+            <div class="address_link-container">
+              <a href="">
+                <img src="{% static 'images/location.png' %}" alt="">
+                <span> Address: Uzbekistan ,Tashkent ,Yunisabad ,Navoiy
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/phone.png' %}" alt="">
+                <span> Tel: 99899 998938
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/mail.png' %}" alt="">
+                <span>
+                  Email: demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 news_container">
+          <div>
+            <div>
+              <h3>
+                newsletter
+              </h3>
+              <form action="">
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+                <div>
+                  <button type="submit">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="social_container">
+              <div>
+                <img src="{% static 'images/fb.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/youtube.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+{%endblock%}

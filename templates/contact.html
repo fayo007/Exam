@@ -1,0 +1,114 @@
+{% extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        {% comment %} <div class=" col-md-6">
+          <div id="map" class="h-100 w-100 ">
+          </div>
+        </div> {% endcomment %}
+        <div class=" col-md-8 contact_form-container">
+          <div class="contact_box">
+            <form  method="post" >
+              {% csrf_token %}
+              <input type="text" placeholder="Your Name" name="name" required >
+              <input type="email" placeholder="Email" name="email">
+              <input type="phone" placeholder="Phone Number" name="phone" required>
+              <input type="text" placeholder="Message" name="text" required >         <div>
+                <button type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 info_detail">
+          <div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+        </div>
+        <div class=" col-md-4 address_container">
+          <div>
+            <h3>
+              Address:
+            </h3>
+            <div class="address_link-container">
+              <a href="">
+                <img src="{% static 'images/location.png' %}" alt="">
+                <span> Address: 73 Canal Street, New York, NY
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/phone.png' %}" alt="">
+                <span> Tel: +1 123 456 789
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/mail.png' %}" alt="">
+                <span>
+                  Email: demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 news_container">
+          <div>
+            <div>
+              <h3>
+                newsletter
+
+              </h3>
+              <form action="">
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+                <div>
+                  <button type="submit">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="social_container">
+              <div>
+                <img src="{% static 'images/fb.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/youtube.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+{%endblock%}

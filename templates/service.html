@@ -1,0 +1,153 @@
+{% extends 'base.html'%}
+
+{%block content%}
+{%load static%}
+
+  <!-- service section -->
+  <section class="service_section layout_padding-top">
+    <div class="container">
+      <div class="service_detail">
+        {% comment %} <h3>
+          
+        </h3> {% endcomment %}
+        <h2>
+          Bizning xizmatlar
+        </h2>
+      </div>
+      <div class="service_img-container">
+        <div class="service_img-box i-box-1">
+          <a href=""> Bank xavfsizligini ta'minlash</a>
+        </div>
+        <div class="service_img-box i-box-2">
+          <a href="">Aholini xavfsizligini ta'minlash </a>
+        </div>
+        <div class="service_img-box i-box-3">
+          <a href="">Mehmonxona xavfsizligini ta'minlash</a>
+        </div>
+        <div class="service_img-box i-box-4">
+          <a href="">Uyingiz xavfsizligini ta'minlash</a>
+        </div>
+      </div>
+      {% comment %} <div class="service_btn">
+        <a href="">
+      
+          <img src="{% static 'images/arrow-black.png' %}" alt="" class="ml-2" />
+        </a>
+      </div> {% endcomment %}
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- security section -->
+
+  <section class="security_section layout_padding">
+    <h2>
+      bizning <br> Ishonchli xodimlarimiz
+    </h2>
+    <div class="security_container">
+      <div class="carousel-wrap">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="security_img-box i-box-1">
+            </div>
+          </div>
+          <div class="item">
+            <div class="security_img-box i-box-2">
+            </div>
+          </div>
+          <div class="item">
+            <div class="security_img-box i-box-3">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="security_btn">
+
+    </div>
+  </section>
+  <!-- end security section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 info_detail">
+          <div>
+          </div>
+        </div>
+        <div class=" col-md-4 address_container">
+          <div>
+            <h3>
+              Address:
+            </h3>
+            <div class="address_link-container">
+              <a href="">
+                <img src="{% static 'images/location.png' %}" alt="">
+                <span> Address: Uzbekistan ,Tashkent ,Yunisabad,Navoiy
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/phone.png' %}" alt="">
+                <span> Tel: +998 777 77 77
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/mail.png' %}" alt="">
+                <span>
+                  Email: security77@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 news_container">
+          <div>
+            <div>
+              <h3>
+                newsletter
+
+              </h3>
+              <form action="">
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+                <div>
+                  <button type="submit">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="social_container">
+              <div>
+                <img src="{% static 'images/fb.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </div>
+              <div>
+                <img src="{% static 'images/youtube.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+  
+      <a href="https://html.design/"></a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+{%endblock%}
